@@ -1,0 +1,15 @@
+<html>
+{% extends "base.html" %}
+{% block home %}
+<form method='post'  autocomplete="off">
+{% csrf_token %}
+      <br>
+       <h1>
+        {{title}}
+        </h1> 
+       {{form}}
+        <button type="submit"> Search</button>
+        </form>
+       <br>
+{% endblock %}
+</html>
